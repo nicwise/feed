@@ -8,6 +8,10 @@ Making content syndication simple and intuitive!</p>
 
 ---
 
+Adding in Enclosures. Thats about it.
+
+---
+
 **👩🏻‍💻 Developer Ready**: Quickly generate syndication feeds for your Website.
 
 **💪🏼 Strongly Typed**: Developed using TypeScript / type-safe.

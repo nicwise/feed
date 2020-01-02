@@ -19,6 +19,8 @@ export interface Item {
   copyright?: string;
 
   extensions?: Extension[];
+
+  enclosure?: Enclosure;
 }
 
 export interface Author {
@@ -57,4 +59,10 @@ export interface FeedOptions {
 export interface Extension {
   name: string;
   objects: any;
+}
+
+export interface Enclosure {
+  url: string;
+  length: number;
+  type: string;
 }

@@ -161,6 +161,17 @@ export default (ins: Feed) => {
       item.enclosure = { _attributes: { url: entry.image } };
     }
 
+    if (entry.enclosure) {
+      item.enclosure = {
+        _attributes: {
+          url: entry.enclosure.url,
+          type: entry.enclosure.type,
+          length: entry.enclosure.length
+        }
+      };
+
+    }
+
     base.rss.channel.item.push(item);
   });
 
