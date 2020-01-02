@@ -9,6 +9,7 @@
   "types": "lib/feed.d.ts",
   "scripts": {
     "build": "rimraf lib/ && mkdir lib && tsc",
+    "prepack": "rimraf lib/ && mkdir lib && tsc",
     "prepublish": "npm run build",
     "test": "export NODE_ENV=test && jest --silent",
     "test-travis": "export NODE_ENV=test && jest --coverage"
